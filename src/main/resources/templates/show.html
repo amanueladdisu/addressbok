@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+<a href="/">Show All addressbooks</a><br />
+Id :<span th:text="${addressbook.id}" ></span><br />
+Nameofpeople :<span th:text="${addressbook.nameofpeople}" ></p>
+Contactlist :<p th:text="${addressbook.contactlist}" ></span><br />
+<a th:href="@{/delete/{id}(id=${addressbook.id})}">Delete this addressbook</a>
+</body>
+</html>
